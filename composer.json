@@ -1,0 +1,22 @@
+{
+    "name": "phprise/common",
+    "description": "Common objects to general usage",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Phprise\\Common\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "esdras-schonevald",
+            "email": "esdraschonevald@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "guzzlehttp/guzzle": "^7.8",
+        "doctrine/collections": "^2.1"
+    }
+}
