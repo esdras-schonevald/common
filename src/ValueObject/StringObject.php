@@ -64,8 +64,11 @@ class StringObject implements Stringable
 
     public function toKebab(): string
     {
-        return strtolower(
-            preg_replace('/([A-Z])/', '-$1', $this->value)
+        return trim(
+            strtolower(
+                preg_replace('/([A-Z])/', '-$1', $this->value)
+            ),
+            '-'
         );
     }
 
