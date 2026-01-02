@@ -65,7 +65,7 @@ abstract class TransferObject implements Stringable
                 continue;
             }
 
-            if (property_exists($setter, $name)) {
+            if (property_exists($static, $name)) {
                 $static->$name = $value;
             }
         }
